@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body * {
+            background-color: transparent;
+        }
+
+        body {
+            background: linear-gradient(141deg, #bbc8e6 0%, #eaf4fc 51%, #bbc8e6 75%);
+        }
+
+        .top-label {
+            background: linear-gradient(141deg, #3e62ad 0%, #4c6cb3 51%, #3e62ad 75%);
+            border-bottom: 1px solid #ececec;
+            padding: 75px 0;
+            text-align: center;
+            color: #f3f3f3;
+            margin-bottom: 20px;
+            font-family: 'Microsoft JhengHei';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div ng-app="mApplicant" ng-controller="mController">
+            <div class="top-label">
+                <span class="page-header">
+                    <h1><small style="color:#fff;">我</small><strong>轉!!</strong>&nbsp<small style="color:#fff;">午餐<strong style="font-weight:bolder;font-size:28px;">吃</strong>什麼?</small></h1>
+                    <img style="width:90px;height:24px;" class="center-block" src="../image/0e73946793e9e4b124f3d2fa5c21e57d.png" />
+                </span>
+            </div>
+            <md-content layout-padding>
+                <form name="loginForm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <!--<div class="col-xs-2"></div>-->
+                                <div class="col-md-offset-2 col-md-8 col-xs-12">
+                                    <md-input-container class="md-block">
+                                        <label>Account</label>
+                                        <input required type="text" name="userAccount" ng-model="user.userAccount"
+                                               required />
+                                        <div ng-messages="loginForm.userAccount.$error" role="alert">
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
+                                    </md-input-container>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <!--<div class="col-xs-2"></div>-->
+                                <div class="col-md-offset-2 col-md-8 col-xs-12">
+                                    <md-input-container class="md-block">
+                                        <label>Password</label>
+                                        <input type="password" required name="userPassword" ng-model="user.userPassword">
+                                        <div ng-messages="loginForm.userPassword.$error">
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
+                                    </md-input-container>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-12">
+                                <h5><small>Sign in using following services</small></h5>
+                                <md-button class="md-fab fa fa-google-plus fa-2x" style="background-color:#d34836">
+                                </md-button>
+                                <md-button class="md-fab fa fa-facebook fa-2x" style="background-color:#3b5998">
+                                </md-button>
+                                <md-button class="md-fab fa fa-twitter fa-2x" style="background-color:#4099FF">
+                                </md-button>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <md-input-container class="md-block pull-right">
+                                    <md-button>Signup</md-button>
+                                    <md-button class="md-raised md-primary" ng-click="login()">Login</md-button>
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </md-content>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript">
+        var app = angular.module('mApplicant', ['ngMaterial']);
+
+        app.controller('mController', function ($scope) {
+
+            $scope.login = function () {
+                $scope.loginForm.$setSubmitted();
+
+                if($scope.loginForm.$invalid)
+                {
+                    return false;
+                }
+                else
+                {
+                    //login
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>
