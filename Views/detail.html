@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://codnauts.com/themes/gravity/app/indigo/profile.html -->
+<html class="no-js mdl-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Gravity</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./Content/1.css" type="text/css">
+    <link rel="stylesheet" href="./Content/icon.css">
+    <link rel="stylesheet" href="./Content/animsition.css">
+    <link rel="stylesheet" type="text/css" href="./Content/sweetalert.css">
+    <link rel="stylesheet" href="./Content/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="./Content/swipebox.min.css">
+    <link rel="stylesheet" href="./Content/style.css">
+    <script async="" src="./Scripts/analytics.js"></script>
+    <script>
+        //(function (i, s, o, g, r, a, m) {
+        //    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        //        (i[r].q = i[r].q || []).push(arguments)
+        //    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        //    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        //})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        //ga('create', 'UA-74264063-1', 'auto');
+        //ga('send', 'pageview');
+
+    </script>
+    <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/util.js"></script>
+    <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/pagejs.js"></script>
+    <style id="style-1-cropbar-clipper">
+        /* Copyright 2014 Evernote Corporation. All rights reserved. */
+        .en-markup-crop-options {
+            top: 18px !important;
+            left: 50% !important;
+            margin-left: -100px !important;
+            width: 200px !important;
+            border: 2px rgba(255,255,255,.38) solid !important;
+            border-radius: 4px !important;
+        }
+
+            .en-markup-crop-options div div:first-of-type {
+                margin-left: 0px !important;
+            }
+
+        .backgroundcolor {
+            background-color: #f1f4f5;
+        }
+
+        .commentpic {
+            border-radius: 40px 40px 40px 40px;
+            border-style: solid;
+            border-width: 1px;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .commentname {
+            font-size: small;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .commenttext {
+            text-align: left;
+        }
+
+        .bookheader {
+            width: 30%;
+            display: inline-block;
+        }
+
+        .bookcontent {
+            width: 60%;
+            display: inline-block;
+        }
+
+        .booktime {
+            border-radius: 40px 40px 40px 40px;
+            border-style: solid;
+            border-width: 1px;
+            width: 60px;
+            height: 20px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            display: inline-block;
+            text-align: left;
+        }
+        .header-background {
+            background: linear-gradient(141deg, #bbc8e6  0%, #eaf4fc  51%, #bbc8e6  75%);
+        }
+        .content-background{
+
+            background: linear-gradient(141deg, #3e62ad  0%, #4c6cb3  51%, #3e62ad  75%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animsition" style="animation-duration: 0.8s; opacity: 1;">
+        <div class="mdl-layout__container">
+            <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button is-small-screen has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+                <header class="mdl-layout__header mdl-layout__header--waterfall">
+                    <div style="display:none;">
+                        <div class="mdl-layout__header-row">
+                            <!-- Spacer -->
+                            <div class="mdl-layout-spacer"></div>
+                            <!-- Right Menu -->
+                            <button class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+                                <i class="material-icons">edit</i>
+                            </button>
+                            <button id="top-header-menu" class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+                                <i class="material-icons">more_vert</i>
+                            </button>
+                        </div>
+                    </div>
+                </header><!---->
+                <!-- Top-right Dropdown Menu -->
+                <div class="mdl-menu__container is-upgraded">
+                    <!--<div class="mdl-menu__outline mdl-menu--bottom-right"></div><div class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="top-header-menu" data-upgraded=",MaterialMenu,MaterialRipple">
+                        <a href="http://codnauts.com/themes/gravity/app/indigo/login.html" class="animsition-link"><span class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">Login<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></span></a>
+                        <a href="http://codnauts.com/themes/gravity/app/indigo/messages.html" class="animsition-link"><span class="mdl-menu__item mdl-badge mdl-js-ripple-effect" data-badge="4" tabindex="-1" data-upgraded=",MaterialRipple">Messages<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></span></a>
+                        <a href="http://codnauts.com/themes/gravity/app/indigo/player.html" class="animsition-link"><span class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">Player<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></span></a>
+                        <a href="http://codnauts.com/themes/gravity/app/indigo/calendar.html" class="animsition-link"><span class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">Calendar<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></span></a>
+                        <a href="http://codnauts.com/themes/gravity/app/indigo/settings.html" class="animsition-link"><span class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">Settings<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></span></a>
+                    </div>-->
+                </div>
+                <!-- Sidebar -->
+                <div class="mdl-layout__drawer">
+                    <!-- Top -->
+                    <div class="mdl-card mdl-shadow--2dp mdl-color--primary mdl-color-text--blue-grey-50 drawer-profile">
+                        <div class="mdl-card__title user">
+                            <img src="./Content/user.jpg" alt="">
+                            <span class="user-name">Jonathan Lee</span>
+                            <span class="user-mail">jonathan@email.com</span>
+                            <button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </button>
+                        </div>
+                        <!-- Top-right User -->
+                        <div class="mdl-card__menu">
+                            <img class="sub-user" src="./Content/sub-user.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Dropdown Menu -->
+                    <div class="mdl-menu__container is-upgraded">
+                        <div class="mdl-menu__outline mdl-menu--bottom-right"></div><ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events" for="user-menu" data-upgraded=",MaterialMenu,MaterialRipple">
+                            <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">hello@email.com<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+                            <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">info@domain.net<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+                            <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">Add another account...<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span></li>
+                        </ul>
+                    </div>
+                    <!-- Main Navigation -->
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/index.html"><i class="material-icons">home</i><span>Home</span></a>
+                        <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/profile.html"><i class="material-icons">account_circle</i><span>Profile</span></a>
+                        <div class="mdl-collapse">
+                            <a class="mdl-navigation__link mdl-collapse__button">
+                                <i class="material-icons">image</i>
+                                <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                                <span>Gallery</span>
+                            </a>
+                            <div class="mdl-collapse__content-wrapper">
+                                <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -104px;">
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/grid.html">Grid</a>
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/masonry.html">Masonry</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-collapse">
+                            <a class="mdl-navigation__link mdl-collapse__button">
+                                <i class="material-icons">library_books</i>
+                                <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                                <span>Blog</span>
+                            </a>
+                            <div class="mdl-collapse__content-wrapper">
+                                <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -104px;">
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/blog.html">Category</a>
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/article.html">Article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/media.html"><i class="material-icons">queue_music</i><span>Media</span></a>
+                        <div class="drawer-separator"></div>
+                        <div class="mdl-collapse">
+                            <a class="mdl-navigation__link mdl-collapse__button">
+                                <i class="material-icons">apps</i>
+                                <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                                <span>App</span>
+                            </a>
+                            <div class="mdl-collapse__content-wrapper">
+                                <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -208px;">
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/login.html">Login</a>
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/messages.html">Messages</a>
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/calendar.html">Calendar</a>
+                                    <a class="mdl-navigation__link animsition-link" href="http://codnauts.com/themes/gravity/app/indigo/settings.html">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Page Content -->
+                <div class="mdl-layout__drawer-button" style="display:none;"><i class="material-icons">menu</i></div>
+                <main class="mdl-layout__content mdl-color--white content-background">
+                    <div class="profile-page">
+                        <img src="https://lh5.googleusercontent.com/-VeHTnlKNTc4/VzvqXl4ZBdI/AAAAAAAAADA/_MJ7-5GpQJEAFZys7a3Zyir9ic0L2lmywCLIB/s455-k-no" alt="">
+                        <div class="contact-info">
+                            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton,MaterialRipple">
+                                <i class="material-icons">star</i>
+                                <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                            </button>
+                            <h3>&nbsp;</h3>
+                        </div>
+                    </div>
+                    <div class="contact-about">
+                        <div class="mdl-card backgroundcolor ">
+                            <div style="top:0px;left:0;margin-left:5%;margin-right:5%;text-align:left;">
+                                <div style="font-family:'Arial Unicode MS';font-weight:bold;color:black;font-size:large;">
+                                    帝拉摩義式餐廳 telamo italian bistro<br />
+                                    <img style="width:15px;height:15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAABkklEQVR4Ac2Wu6oTQRzGf2JlZ+sFBbVRLMQXEJ9B0mgjgiEm+x8QtBC00FR5A5/B0kfQiIKNhcQmRDCSZGfgtOcU4Vw+SCCE3ZO9c37wwTD/y8fMsLNDUUKbSxJN4x0mNW9sDL3jK03y37gajENp2uEKTREiXgbHkaRxc8aOH2tjb3ynCWY9rq9NJW235qib2Hi9aSzFjlfUTTB+bhtrjjqJX3BDRklSrMg3+exEX3YpGH/SjBXL0kNe21v43BsHalKHvLEvD5IIPe57Y1KD6US9OY2/T7kYjM9VmaqXepKRc97xJhjLEoZL9VAv8jJ3PPSORV5T1aiWMvyLuOyNb1lNlauaqu7mQY4VD6r8945zrHhcjWmXe3nPWDVVrLafdiFIKbF+Fec7SvhUfi863JU0TjAfUYZZl9sJph+nLS6wQmPNbefNjTtltvnthuFeHPGIFBRTzsaT6F0Z41+rMxvO2lxjB8rRy1M1qi360ripay92fPjU4jwZUW5svFet73KLvCwiHgfjAQVRbWw84axxDHyajlb+vInhAAAAAElFTkSuQmCC">
+                                    <img style="width:15px;height:15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAABkklEQVR4Ac2Wu6oTQRzGf2JlZ+sFBbVRLMQXEJ9B0mgjgiEm+x8QtBC00FR5A5/B0kfQiIKNhcQmRDCSZGfgtOcU4Vw+SCCE3ZO9c37wwTD/y8fMsLNDUUKbSxJN4x0mNW9sDL3jK03y37gajENp2uEKTREiXgbHkaRxc8aOH2tjb3ynCWY9rq9NJW235qib2Hi9aSzFjlfUTTB+bhtrjjqJX3BDRklSrMg3+exEX3YpGH/SjBXL0kNe21v43BsHalKHvLEvD5IIPe57Y1KD6US9OY2/T7kYjM9VmaqXepKRc97xJhjLEoZL9VAv8jJ3PPSORV5T1aiWMvyLuOyNb1lNlauaqu7mQY4VD6r8945zrHhcjWmXe3nPWDVVrLafdiFIKbF+Fec7SvhUfi863JU0TjAfUYZZl9sJph+nLS6wQmPNbefNjTtltvnthuFeHPGIFBRTzsaT6F0Z41+rMxvO2lxjB8rRy1M1qi360ripay92fPjU4jwZUW5svFet73KLvCwiHgfjAQVRbWw84axxDHyajlb+vInhAAAAAElFTkSuQmCC">
+                                    <img style="width:15px;height:15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAABkklEQVR4Ac2Wu6oTQRzGf2JlZ+sFBbVRLMQXEJ9B0mgjgiEm+x8QtBC00FR5A5/B0kfQiIKNhcQmRDCSZGfgtOcU4Vw+SCCE3ZO9c37wwTD/y8fMsLNDUUKbSxJN4x0mNW9sDL3jK03y37gajENp2uEKTREiXgbHkaRxc8aOH2tjb3ynCWY9rq9NJW235qib2Hi9aSzFjlfUTTB+bhtrjjqJX3BDRklSrMg3+exEX3YpGH/SjBXL0kNe21v43BsHalKHvLEvD5IIPe57Y1KD6US9OY2/T7kYjM9VmaqXepKRc97xJhjLEoZL9VAv8jJ3PPSORV5T1aiWMvyLuOyNb1lNlauaqu7mQY4VD6r8945zrHhcjWmXe3nPWDVVrLafdiFIKbF+Fec7SvhUfi863JU0TjAfUYZZl9sJph+nLS6wQmPNbefNjTtltvnthuFeHPGIFBRTzsaT6F0Z41+rMxvO2lxjB8rRy1M1qi360ripay92fPjU4jwZUW5svFet73KLvCwiHgfjAQVRbWw84axxDHyajlb+vInhAAAAAElFTkSuQmCC">
+                                    <img style="width:15px;height:15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAABkklEQVR4Ac2Wu6oTQRzGf2JlZ+sFBbVRLMQXEJ9B0mgjgiEm+x8QtBC00FR5A5/B0kfQiIKNhcQmRDCSZGfgtOcU4Vw+SCCE3ZO9c37wwTD/y8fMsLNDUUKbSxJN4x0mNW9sDL3jK03y37gajENp2uEKTREiXgbHkaRxc8aOH2tjb3ynCWY9rq9NJW235qib2Hi9aSzFjlfUTTB+bhtrjjqJX3BDRklSrMg3+exEX3YpGH/SjBXL0kNe21v43BsHalKHvLEvD5IIPe57Y1KD6US9OY2/T7kYjM9VmaqXepKRc97xJhjLEoZL9VAv8jJ3PPSORV5T1aiWMvyLuOyNb1lNlauaqu7mQY4VD6r8945zrHhcjWmXe3nPWDVVrLafdiFIKbF+Fec7SvhUfi863JU0TjAfUYZZl9sJph+nLS6wQmPNbefNjTtltvnthuFeHPGIFBRTzsaT6F0Z41+rMxvO2lxjB8rRy1M1qi360ripay92fPjU4jwZUW5svFet73KLvCwiHgfjAQVRbWw84axxDHyajlb+vInhAAAAAElFTkSuQmCC">
+                                    <img style="width:15px;height:15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAQAAADc8cciAAAA3ElEQVR4Aa3Sb2vCMBCA8WfStI6CTNdZwTdCtOow9/0/3o4hJbj8a9jvgULDHRQakhqt2qdWzWqVDE5rqDIg2kCVM6JZKhjkN4dhsS/k2VD70RpnFmoRr5aoLfZPE+I1BSa2PO14IAt6sMPzzq149abTL1acilZPrGK/xyUXnU4k9Nyjq3d6MhpscNXSUOAQXD5Q5BpcvlJgjURakzX6l0GTuZGsybuUnea/Z3Tz6JE3lD6P81lH0h7Rvtng2+iJaHuSLggWwyuDRbiQ0OIYiRlxtER90JPS68R/+QF+GizVfp9jWgAAAABJRU5ErkJggg==">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a class="no-accent-color" href="#booking"><i class="material-icons">call</i></a>
+                                    <span>訂位</span>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a class="no-accent-color" href="#menu"><i class="material-icons">message</i></a>
+                                    <span>菜單</span>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a><i class="material-icons">favorite</i></a>
+                                    <span>Like</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdl-card latest-images gallery-container backgroundcolor images">
+                            <div class="mdl-grid gallery">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="./Content/5.jpg" class="swipebox" title="Car"><img src="./Content/5.jpg" alt=""></a>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="./Content/2.jpg" class="swipebox" title="Sea"><img src="./Content/2.jpg" alt=""></a>
+                                </div>
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="./Content/3.jpg" class="swipebox" title="Coffee"><img src="./Content/3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mdl-card backgroundcolor menu" id="menu">
+                            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp is-upgraded" data-upgraded=",MaterialDataTable">
+                                <thead>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric">餐點</th>
+                                        <th>價格</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">排骨飯</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">肉魚飯</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">秋刀魚</td>
+                                        <td>85</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mdl-card backgroundcolor comment">
+                            <div style="width:100%;vertical-align:middle;">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            <span class="commentpic"><img src="http://lh6.googleusercontent.com/-MunY5SOp4yI/AAAAAAAAAAI/AAAAAAAAAAA/TJrgazPBnOs/photo.jpg" /></span><span class="commentname"> Chih-Cheng Ting</span>
+                                        </td>
+                                        <td class="commenttext">很有懷舊復古的氛圍</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="width:100%;vertical-align:middle;">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            <span class="commentpic"><img src="http://lh6.googleusercontent.com/-MunY5SOp4yI/AAAAAAAAAAI/AAAAAAAAAAA/TJrgazPBnOs/photo.jpg" /></span><span class="commentname">梁廷杰</span>
+
+                                        </td>
+                                        <td class="commenttext">環境清幽，可以放鬆心情。</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="width:100%;vertical-align:middle;">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td>
+                                            <span class="commentpic"><img src="http://lh3.googleusercontent.com/-zHt6WeXEN1c/AAAAAAAAAAI/AAAAAAAAoJ4/L1pFpqKI6o0/photo.jpg" /></span><span class="commentname">周易正</span>
+                                        </td>
+                                        <td class="commenttext">台灣最著名的喝茶聖地。</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="mdl-card mdl-shadow--2dp booking" id="booking">
+                            <div style="width:100%;margin-bottom:5px;"><table style="width:100%;"><tr><td class="bookheader">訂位人數</td><td class="bookcontent"><input type="number" /></td></tr></table></div>
+                            <div style="width:100%;margin-bottom:5px;"><table style="width:100%;"><tr><td class="bookheader">訂位日期</td><td class="bookcontent"><input type="date" /></td></tr></table></div>
+                            <div class="booktime  mdl-shadow--2dp" style="width:60px;height:20px;">&nbsp;&nbsp; 訂位</div>
+                        </div>
+
+                        <div class="mdl-card mdl-shadow--2dp booking" style="display:none">
+                            <h4>成功</h4>
+                            您選擇的時段已訂位成功。<br />
+                            餐廳：帝拉摩義式餐廳 telamo italian bistro<br />
+                            時段：2016/9/23 18:30<br />
+                        </div>
+
+                        <div class="mdl-card mdl-shadow--2dp movie" style="display:none;">
+                            <img src="./Content/9.jpg" alt="">
+                            <div id="p1" class="mdl-progress mdl-js-progress is-upgraded" style="width:100%;" data-upgraded=",MaterialProgress"><div class="progressbar bar bar1" style="width: 77%;"></div><div class="bufferbar bar bar2" style="width: 100%;"></div><div class="auxbar bar bar3" style="width: 0%;"></div></div>
+                            <div class="movie-controller">
+                                <button class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+                                    <i class="material-icons">play_arrow</i>
+                                </button>
+                                <span><strong>54:26</strong> / 1:15:30</span>
+                                <button class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+                                    <i class="material-icons">fullscreen</i>
+                                </button>
+                                <div class="mdl-slider__container"><input class="mdl-slider mdl-js-slider is-upgraded" type="range" min="0" max="100" value="25" tabindex="0" data-upgraded=",MaterialSlider"><div class="mdl-slider__background-flex"><div class="mdl-slider__background-lower" style="flex: 0.25 1 0%;"></div><div class="mdl-slider__background-upper" style="flex: 0.75 1 0%;"></div></div></div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+
+                        <div class="mdl-card mdl-shadow--2dp weather" style="display:none;">
+                            <span>11:57 AM</span>
+                            <h2>26</h2>
+                            <button class="mdl-button mdl-js-button mdl-button--icon left" data-upgraded=",MaterialButton">
+                                <i class="material-icons">chevron_left</i>
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-button--icon right" data-upgraded=",MaterialButton">
+                                <i class="material-icons">chevron_right</i>
+                            </button>
+                            <span>Sunny</span>
+                            <div class="weather-info">
+                                <h4>Mountain View</h4>
+                                <span>California</span>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="mdl-layout__obfuscator"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Scripts/jquery-2.1.4.min.js"></script>
+    <script src="./Scripts/jquery.animsition.js"></script>
+    <script src="./Scripts/sweetalert.min.js"></script>
+    <script src="./Scripts/material.min.js"></script>
+    <script src="./Scripts/jquery.swipebox.min.js"></script>
+    <script src="./Scripts/function.js"></script>
+    <script>
+        document.querySelector('#p1').addEventListener('mdl-componentupgraded', function () {
+            this.MaterialProgress.setProgress(77);
+        });
+    </script>
+
+    <div id="window-resizer-tooltip"><a href="http://codnauts.com/themes/gravity/app/indigo/profile.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div>
+</body>
+</html>
